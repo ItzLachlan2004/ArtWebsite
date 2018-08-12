@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Chelsea Papas</title>
+  </head>
+
+  <body>
+    <section class="s1">
+      <div class="cls1">
+        <div class="content">
+          <h1>Heading Here</h1>
+          <a class="btn" href="#">My Patreon</a>
+          <a class="btn" href="https://www.instagram.com/chelsea_art.account/">My Instagram</a>
+          <a class="btn" href="mailto:chelsea.papas@lakeside.vic.edu.au">My Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="s2">
+      <div class="cls2">
+        <div class="content2">
+          <h1>My Art Samples</h1>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="image1.jpg" style="width:100%">
+            <div class="text">"Fireworks"</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="image2.jpg" style="width:100%">
+            <div class="text">"Tiger"</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="image3.jpg" style="width:100%">
+            <div class="text">"Fishy Bois"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>Art by Chelsea Papas - Website by Lachlan Earle - &copy; 2018</p>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000);
+      }
+    </script>
+
+  </body>
+
+</html>
